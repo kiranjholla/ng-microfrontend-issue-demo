@@ -4,7 +4,7 @@
     "route": "one",
     "name": "TV Series",
     "styles": ["styles.09e2c710755c8867a460.css"],
-    "scripts": ["polyfills.f19bb1699c25986cf4af.js", "main.72d0f1725376c89870af.js"]
+    "scripts": ["polyfills.f19bb1699c25986cf4af.js", "main.383f6db4e1fa79a9fb5a.js"]
   },
   "app-two": {
     "hostname": "http://localhost:8090/",
