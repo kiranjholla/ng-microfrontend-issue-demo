@@ -1,0 +1,9 @@
+<div class="topNav">
+  <ul>
+    <li><a href="#/">Home</a></li>
+    <li *ngFor="let link of links">
+      <a href="{{ link.route }}">{{ link.name }}</a>
+    </li>
+    <li><a href="#/some-invalid-url">Simulate Page not found</a></li>
+  </ul>
+</div>

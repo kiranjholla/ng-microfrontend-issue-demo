@@ -1,0 +1,19 @@
+.topNav {
+  flex: 1 80px;
+  border: 1px dashed maroon;
+  margin: 4px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.topNav > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.topNav > ul > li {
+  margin: 8px 25px;
+  flex: auto
+}

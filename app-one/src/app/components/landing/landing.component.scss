@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.leftNav {
+  flex: 1 80px;
+  border: 1px dashed darkblue;
+  margin: 4px;
+}
+
+.leftNav > ul > li {
+  margin: 20px;
+}
+
+.content {
+  flex: 5 500px;
+  border: 1px dashed darkblue;
+  margin: 4px;
+  padding: 15px;
+}
+
+#view-port {
+  flex: auto;
+}

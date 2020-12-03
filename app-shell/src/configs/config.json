@@ -1,0 +1,16 @@
+{
+  "app-one": {
+    "hostname": "http://localhost:8080/",
+    "route": "one",
+    "name": "TV Series",
+    "styles": ["styles.09e2c710755c8867a460.css"],
+    "scripts": ["polyfills.f19bb1699c25986cf4af.js", "main.72d0f1725376c89870af.js"]
+  },
+  "app-two": {
+    "hostname": "http://localhost:8090/",
+    "route": "two",
+    "name": "Movie Franchises",
+    "styles": ["styles.09e2c710755c8867a460.css"],
+    "scripts": ["polyfills.f19bb1699c25986cf4af.js", "main.91823ce22dcacbb559e9.js"]
+  }
+}
