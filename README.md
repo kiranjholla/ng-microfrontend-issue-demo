@@ -51,7 +51,7 @@ This project comprises of three distint Angular Projects:
   - And then, serve App Two in a different terminal windwo
     ```
     cd app-two\dist\app-two
-    http-server . -p 8080 --cors
+    http-server . -p 8090 --cors
     ```
 
 - Now run the Application Shell
@@ -63,6 +63,8 @@ This project comprises of three distint Angular Projects:
 ### Current Observation
 
 We observe, that in the current scenario, there is an intermittent error that is thrown in the Browser console. This error happens only intermittently, and may disappear or manifest itself again when the individual micro-applications are built again and again.
+
+This error is observed only when the two Micro Applications are built with the `--prod` flag. If we build the Micro Applications after disabling optimization and AOT compilation in their respective `angular.json` files, then this error disappears.
 
 ![./console-error.jpg](./console-error.jpg)
 
