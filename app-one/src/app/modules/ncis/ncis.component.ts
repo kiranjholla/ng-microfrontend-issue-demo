@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-dc',
+  selector: 'app-nics',
   templateUrl: './ncis.component.html',
   styleUrls: ['./ncis.component.scss']
 })
