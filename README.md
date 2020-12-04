@@ -68,6 +68,19 @@ This error is observed only when the two Micro Applications are built with the `
 
 ![./console-error.jpg](./console-error.jpg)
 
+### Same codebase, different results per build
+
+We also observe that if we run the build multiple times for the same codebase, the output and the outcome may be different.
+
+An example of this is the `main.383f6db4e1fa79a9fb5a.js` file that is part of the build output for the Micro Application `app-one`. We ran the build for the `app-one` application multiple times and received the same filename as a result of both builds. But the contents of two are different.
+- The build output from the commit 93f7cd4e341ae3e3c764578c2567ca6255301b1c executes just fine and the application works
+- The build output from the commit a14aeaad39ac323e7e0c27bb77ea9d837a45d7e7 fails to execute and results in the above mentioned error.
+
+Both the build outputs for the commit ids mentiond above, are from the exact same codebase.
+
+This can lead us to believe that there is something in the build process that has resulted in the same codebase yielding different outputs. It is also possible that there is something in the structure of the code which causes the builds to produce differing results eventhough the SHA for the file is the same.
+
+
 ### References
 
 - [Micro Apps with Web Components using Angular Elements](https://www.angulararchitects.io/aktuelles/micro-apps-with-web-components-using-angular-elements/)
