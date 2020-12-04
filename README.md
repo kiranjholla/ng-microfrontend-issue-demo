@@ -73,8 +73,8 @@ This error is observed only when the two Micro Applications are built with the `
 We also observe that if we run the build multiple times for the same codebase, the output and the outcome may be different.
 
 An example of this is the `main.383f6db4e1fa79a9fb5a.js` file that is part of the build output for the Micro Application `app-one`. We ran the build for the `app-one` application multiple times and received the same filename as a result of both builds. But the contents of two are different.
-- The build output from the commit 93f7cd4e341ae3e3c764578c2567ca6255301b1c executes just fine and the application works
-- The build output from the commit a14aeaad39ac323e7e0c27bb77ea9d837a45d7e7 fails to execute and results in the above mentioned error.
+- The build output from the commit [93f7cd4](https://github.com/kiranjholla/ng-microfrontend-issue-demo/commit/93f7cd4e341ae3e3c764578c2567ca6255301b1c) executes just fine and the application works
+- The build output from the commit [a14aeaa](https://github.com/kiranjholla/ng-microfrontend-issue-demo/commit/a14aeaad39ac323e7e0c27bb77ea9d837a45d7e7) fails to execute and results in the above mentioned error.
 
 Both the build outputs for the commit ids mentiond above, are from the exact same codebase.
 
