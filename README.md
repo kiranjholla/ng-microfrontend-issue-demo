@@ -80,6 +80,18 @@ Both the build outputs for the commit ids mentiond above, are from the exact sam
 
 This can lead us to believe that there is something in the build process that has resulted in the same codebase yielding different outputs. It is also possible that there is something in the structure of the code which causes the builds to produce differing results eventhough the SHA for the file is the same.
 
+### Race Condition??
+
+Whenever we run the command `ng build --prod --single-bundle true` we get an output similar to the one below:
+![Build Output](build-output.png)
+
+You might notice that all files are rendered twice, whereas in the actual Build output there is only one file by that name. You might also notice that the sizes of the files rendered differ.
+- The file `main.383f6db4e1fa79a9fb5a.js` has two sizes: one is of 200 kB and the other of 244 kB.
+
+When we take a look at the two commits mentioned above, we notice that the size of the file that works (from commit [93f7cd4](https://github.com/kiranjholla/ng-microfrontend-issue-demo/commit/93f7cd4e341ae3e3c764578c2567ca6255301b1c)) is ~200 kB, where as the size of the file that results in an error (from commit [a14aeaa](https://github.com/kiranjholla/ng-microfrontend-issue-demo/commit/a14aeaad39ac323e7e0c27bb77ea9d837a45d7e7)) is ~245 kB.
+
+Perhaps there are two versions of the file being generated, and one is overwriting the other because its generation completes after the first one?
+
 
 ### References
 
