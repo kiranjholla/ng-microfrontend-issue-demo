@@ -37,13 +37,13 @@ export class AppComponent implements AfterViewInit {
   }
 
   private loadApp(ele: string, config: any) {
-    const { hostname = '', scripts, loaded, route, name, element = ele } = config;
+    const { hostname = '', scripts, styles, loaded, route, name, element = ele } = config;
 
     if (loaded) {
       return;
     }
 
-    this.links.push({ route: `#/${route}`, name: name });
+    this.links.push({ route: `#/${route}`, name });
     this.routes.push({ path: `${route}`, component: EmptyComponent });
 
     scripts?.forEach(path => {
@@ -51,6 +51,13 @@ export class AppComponent implements AfterViewInit {
       scriptTag.setAttribute('src', `${hostname}${path}`);
       scriptTag.setAttribute('defer', '');
       this.container.nativeElement.appendChild(scriptTag);
+    });
+
+    styles?.forEach(style => {
+      const styleTag = document.createElement('link');
+      styleTag.setAttribute('href', `${hostname}${style}`);
+      styleTag.setAttribute('rel', 'stylesheet');
+      document.head.appendChild(styleTag);
     });
 
     if (scripts?.length) {
