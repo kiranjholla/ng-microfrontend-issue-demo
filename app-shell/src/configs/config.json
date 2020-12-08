@@ -4,13 +4,13 @@
     "route": "one",
     "name": "TV Series",
     "styles": ["styles.09e2c710755c8867a460.css"],
-    "scripts": ["runtime.9fa23829d02811b49626.js", "polyfills.f2574e5f604c910fdfc7.js", "main.18101564f28ef386884a.js"]
+    "scripts": ["runtime-es5.6cb6e89f26a6dd9d4ccf.js", "polyfills-es5.ef63332ee6ca4ac4a622.js", "main-es5.a3480020c14169b64781.js"]
   },
   "app-two": {
     "hostname": "http://localhost:8090/",
     "route": "two",
     "name": "Movie Franchises",
     "styles": ["styles.09e2c710755c8867a460.css"],
-    "scripts": ["runtime.b952b21d406b62ad7499.js", "polyfills.57e39906ab34917130cb.js", "main.f893482e406fa80dbbc2.js"]
+    "scripts": ["runtime-es5.30bbdbd8512250104764.js", "polyfills-es5.713426ce12886fa4ba04.js", "main-es5.22ee32b2cd5fabb7eb79.js"]
   }
 }
