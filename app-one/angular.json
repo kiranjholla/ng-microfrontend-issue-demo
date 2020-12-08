@@ -15,8 +15,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "ngx-build-plus:build",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "customWebpackConfig": {
+              "path": "./webpack.app-one.js"
+            },
             "outputPath": "dist/app-one",
             "index": "src/index.html",
             "main": "src/main.ts",
