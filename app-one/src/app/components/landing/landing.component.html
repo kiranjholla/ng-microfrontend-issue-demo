@@ -7,6 +7,10 @@
         <li><a routerLink="ncis">NCIS</a></li>
       </ul>
     </div>
-    <div id="content" class="content"><router-outlet></router-outlet></div>
+    <div id="content" class="content">
+      <!-- Image tv.png sourced from https://pixabay.com/vectors/vector-tv-tube-old-4684771/ -->
+      <div class="image"><img [src]="'assets/tv.png' | assetUrl" alt="tv" width="150px" /></div>
+      <div class="fragment"><router-outlet></router-outlet></div>
+    </div>
   </div>
 </div>

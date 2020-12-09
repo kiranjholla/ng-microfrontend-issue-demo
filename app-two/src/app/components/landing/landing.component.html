@@ -7,6 +7,10 @@
         <li><a routerLink="harry">Harry Potter</a></li>
       </ul>
     </div>
-    <div id="content" class="content"><router-outlet></router-outlet></div>
+    <div id="content" class="content">
+      <!-- Image movie.jpg sourced from https://pixabay.com/illustrations/movie-reel-projector-film-cinema-1673021/ -->
+      <div class="image"><img [src]="'assets/movie.jpg' | assetUrl" alt="movies" width="150px" /></div>
+      <div class="fragment"><router-outlet></router-outlet></div>
+    </div>
   </div>
 </div>

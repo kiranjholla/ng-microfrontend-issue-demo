@@ -19,9 +19,20 @@
 
 .content {
   flex: 5 500px;
+  display: flex;
+  flex-direction: row;
   border: 1px dashed darkblue;
   margin: 4px;
   padding: 15px;
+}
+
+.image {
+  flex: 0 1 50px;
+  padding: 20px;
+}
+
+.fragment {
+  flex: auto;
 }
 
 #view-port {
