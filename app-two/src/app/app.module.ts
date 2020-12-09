@@ -10,9 +10,10 @@ import { HomeComponent } from './components/home/home.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { HarryPotterModule } from './modules/harry-potter/harry-potter.module';
 import { StarWarsModule } from './modules/star-wars/star-wars.module';
+import { AssetUrlPipe } from './utils/asset-url.pipe';
 
 @NgModule({
-  declarations: [AppComponent, EmptyComponent, LandingComponent, HomeComponent],
+  declarations: [AppComponent, EmptyComponent, LandingComponent, HomeComponent, AssetUrlPipe],
   imports: [BrowserModule, AppRoutingModule, StarWarsModule, HarryPotterModule],
   providers: [],
   bootstrap: [],

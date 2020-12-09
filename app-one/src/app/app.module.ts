@@ -10,9 +10,10 @@ import { HomeComponent } from './components/home/home.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { NCISModule } from './modules/ncis/ncis.module';
 import { WestWingModule } from './modules/west-wing/west-wing.module';
+import { AssetUrlPipe } from './utils/asset-url.pipe';
 
 @NgModule({
-  declarations: [AppComponent, EmptyComponent, LandingComponent, HomeComponent],
+  declarations: [AppComponent, EmptyComponent, LandingComponent, HomeComponent, AssetUrlPipe],
   imports: [BrowserModule, AppRoutingModule, NCISModule, WestWingModule],
   providers: [],
   bootstrap: [],
