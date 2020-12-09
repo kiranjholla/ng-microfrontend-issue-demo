@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
+import { StateService } from './services/state.service';
 
 @Component({
   selector: 'app-two',
@@ -7,11 +9,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'app-two';
+  @Input() host: string;
 
-  constructor(private readonly router: Router) {}
+  constructor(private readonly router: Router, private readonly stateService: StateService) {}
 
   ngOnInit() {
+    if (this.host) {
+      this.stateService.next({ hostname: this.host });
+    }
+
     this.router.initialNavigation();
   }
 }
