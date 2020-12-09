@@ -62,6 +62,7 @@ export class AppComponent implements AfterViewInit {
 
     if (scripts?.length) {
       const domElem = document.createElement(element);
+      domElem.setAttribute('host', hostname);
       this.container.nativeElement.appendChild(domElem);
       config.loaded = true;
     }
