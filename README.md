@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The intent of this project is to demonstrate an intermittent issue being faced while creating Micro-frontends.
+The intent of this project is to put together the various moving parts that are involved in getting Angular-based Micro Frontends to work.
 
 ### Design
 
